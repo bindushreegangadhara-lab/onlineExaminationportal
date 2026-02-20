@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+</head>
+<body>
+
+<h2>Welcome {{name}}</h2>
+
+<form action="/result" method="POST">
+<input type="hidden" name="name" value="{{name}}">
+
+<p>1. Capital of India?</p>
+<input type="radio" name="q1" value="a"> Mumbai<br>
+<input type="radio" name="q1" value="b"> Delhi<br>
+<input type="radio" name="q1" value="c"> Kolkata<br>
+
+<p>2. Web language?</p>
+<input type="radio" name="q2" value="a"> Python<br>
+<input type="radio" name="q2" value="b"> JavaScript<br>
+<input type="radio" name="q2" value="c"> C++<br>
+
+<p>3. 5 + 3 = ?</p>
+<input type="radio" name="q3" value="a"> 6<br>
+<input type="radio" name="q3" value="b"> 8<br>
+<input type="radio" name="q3" value="c"> 10<br><br>
+
+<button type="submit">Submit Exam</button>
+</form>
+
+</body>
+</html>
